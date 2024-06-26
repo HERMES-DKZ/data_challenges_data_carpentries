@@ -9,7 +9,10 @@ zeitungen = pd.read_pickle("newspapers_ger_1914_part_1")                        
 api_key = "MkkL6axpVUGctWeMTbky4gpGu357FQvivjk3LK4J8rmH93aDQ6o1711377019931"
 base_url = "https://api.deutsche-digitale-bibliothek.de/items"
 headers = {'accept': 'application/xml'}
+if not os.path.exists(images):
+    os.mkdir(images)
 download_dir = "images"
+
 
 id_old=1
 for index, data in zeitungen.iterrows():         # Iteriere durch DataFrame-Reihen
