@@ -5,9 +5,12 @@ import os
 import heapq
 
 # Lade deine Datensätze
-zeitungen = pd.read_pickle("newspapers_ger_1914_part_1")                                                  #Hier die Daten eintragen, die als Grundlage verwendet wird
-api_key = "MkkL6axpVUGctWeMTbky4gpGu357FQvivjk3LK4J8rmH93aDQ6o1711377019931"
-base_url = "https://api.deutsche-digitale-bibliothek.de/items"
+#Hier die Datei eintragen, die als Grundlage verwendet wird
+zeitungen = pd.read_pickle("newspapers_ger_1914_part_1") 
+
+#Für die API wird ein Schlüssel und ein Account bei der DDB benötigt. Unter folgendem Link kann ein Account erstellt werden und anschließend kostenlos ein API-Key beantragt werden: https://www.deutsche-digitale-bibliothek.de/user/apikey
+api_key = ""                                                                                              
+base_url = "https://api.deutsche-digitale-bibliothek.de/items"                                            
 headers = {'accept': 'application/xml'}
 if not os.path.exists(images):
     os.mkdir(images)
