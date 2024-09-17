@@ -1,4 +1,4 @@
 [ZoneTransfer]
 ZoneId=2
-ReferrerUrl=http://localhost:8889/notebooks/statistical_inference_data_visualization.ipynb
-HostUrl=http://localhost:8889/nbconvert/html/statistical_inference_data_visualization.ipynb?download=true
+ReferrerUrl=http://localhost:8888/notebooks/statistical_inference_data_visualization.ipynb
+HostUrl=http://localhost:8888/nbconvert/html/statistical_inference_data_visualization.ipynb?download=true
